@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html data-theme="valentine" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Searcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+  </head>
+  <style>
+    #list::-webkit-scrollbar
+    {
+    width: 5px;
+    background-color: transparent;
+    }
+    #list::-webkit-scrollbar-thumb
+    {
+    background-color: #a61668;
+    border-radius: 30px;
+    }
+  </style>
+  <body>
+    <div class="card bg-base-200 mx-auto w-96 shadow-xl">
+      <div class="card-body">
+        <h1 class="card-title">Menu Searcher</h1>
+        <p>Hello there, Find your favorite menu by just type it on search bar below!</p>
+        <div class="card-actions justify-end">
+          <input id="search-bar" type="text" placeholder="Ex: Cookie" class="input input-bordered w-full max-w-xs"/>
+          <button id="tombol" class="btn btn" onclick="Pencarian()">SEARCH</button>
+        </div>
+        <span id="product-data">
+          <div id="list" class="h-96 overflow-y-auto product-list">
+            <span>
+              <div id="product" class="card bg-neutral-content mt-4 p-4 w-full bg-base-100 shadow-lg">
+                <div class="avatar">
+                  <div class="w-24 rounded-xl">
+                    <img src="./img/cookie.jpg" />
+                  </div>
+                  <h2 class="px-4 font-bold text-xl">
+                    <a href="#">Cookie</a>
+                    <div class="badge badge-primary">NEW</div>
+                    <p class="font-light">Rp 5.000</p>
+                  </h2>
+                </div>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Food</div>
+                </div>
+              </div>
+            </span>
+            <span>
+              <div id="product" class="card bg-neutral-content mt-4 p-4 w-full bg-base-100 shadow-lg">
+                <div class="avatar">
+                  <div class="w-24 rounded-xl">
+                    <img src="./img/milkshake.jpg" />
+                  </div>
+                  <h2 class="px-4 font-bold text-xl">
+                    <a href="#">Milkshake</a>
+                    <div class="badge badge-primary">NEW</div>
+                    <p class="font-light">Rp 10.000</p>
+                  </h2>
+                </div>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Drink</div>
+                </div>
+              </div>
+            </span>
+            <span>
+              <div id="product" class="card bg-neutral-content mt-4 p-4 w-full bg-base-100 shadow-lg">
+                <div class="avatar">
+                  <div class="w-24 rounded-xl">
+                    <img src="./img/cupcake.jpeg" />
+                  </div>
+                  <h2 class="px-4 font-bold text-xl">
+                    <a href="#">Cupcake</a>
+                    <p class="font-light">Rp 8.000</p>
+                  </h2>
+                </div>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Food</div>
+                </div>
+              </div>
+            </span>
+            <span>
+              <div id="product" class="card bg-neutral-content mt-4 p-4 w-full bg-base-100 shadow-lg">
+                <div class="avatar">
+                  <div class="w-24 rounded-xl">
+                    <img src="./img/donut.jpg" />
+                  </div>
+                  <h2 class="px-4 font-bold text-xl">
+                    <a href="#">Donut</a>
+                    <p class="font-light">Rp 8.000</p>
+                  </h2>
+                </div>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Food</div>
+                </div>
+              </div>
+            </span>
+            <span>
+              <div id="product" class="card bg-neutral-content mt-4 p-4 w-full bg-base-100 shadow-lg">
+                <div class="avatar">
+                  <div class="w-24 rounded-xl">
+                    <img src="./img/icecream.jpg" />
+                  </div>
+                  <h2 class="px-4 font-bold text-xl">
+                    <a href="#">Ice Cream</a>
+                    <p class="font-light">Rp 6.000</p>
+                  </h2>
+                </div>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Food</div>
+                </div>
+              </div>
+            </span>
+            <span>
+              <div id="product" class="card bg-neutral-content mt-4 p-4 w-full bg-base-100 shadow-lg">
+                <div class="avatar">
+                  <div class="w-24 rounded-xl">
+                    <img src="./img/lolipop.jpg" />
+                  </div>
+                  <h2 class="px-4 font-bold text-xl">
+                    <a href="#">Lolipop</a>
+                    <p class="font-light">Rp 3.000</p>
+                  </h2>
+                </div>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Food</div>
+                </div>
+              </div>
+            </span>
+        </span>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
